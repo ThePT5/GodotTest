@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bydgq1bvyaibu"]
+
+[node name="Node3D" type="Node3D" unique_id=1311343281]
+
+[node name="Label3D" type="Label3D" parent="." unique_id=2132401044]
+text = "You are dead lmao
+womp womp"
