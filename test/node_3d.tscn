@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cvyw43rbl3tnc"]
+
+[ext_resource type="PackedScene" uid="uid://bydgq1bvyaibu" path="res://Player.tscn" id="1_a202f"]
+
+[node name="Node3D" type="Node3D" unique_id=1439626017]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1070402891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18054199, 0, -2.7554932)
+size = Vector3(31.414795, 1, 6.5109863)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1923876839]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.1980536, 3.125853, -0.023236632)
+size = Vector3(31.414795, 1, 5.199707)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D2" unique_id=1545445906]
+transform = Transform3D(4.2536736, 0, 0, 0, 1.1216422, 0, 0, 0, 3.8017957, 0.0022810698, -0.14520934, -0.64185524)
+operation = 2
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGBox3D2" unique_id=1916402614]
+transform = Transform3D(4.2536736, 0, 0, 0, 1.1216422, 0, 0, 0, 3.8017957, 8.188431, -0.42772388, 0)
+operation = 2
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGBox3D2" unique_id=945974517]
+transform = Transform3D(4.2536736, 0, 0, 0, 1.1216422, 0, 0, 0, 3.8017957, -5.44326, -0.44080818, 2.737771)
+operation = 2
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="CSGBox3D2" unique_id=789096803]
+transform = Transform3D(4.2536736, 0, 0, 0, 1.1216422, 0, 0, 0, 3.8017957, -11.789835, -0.35017774, 0.19079041)
+operation = 2
+
+[node name="Node3D" parent="." unique_id=1311343281 instance=ExtResource("1_a202f")]
+transform = Transform3D(-24.734774, 0, -1.7484564e-07, 0, 34.541603, 0, -4.3247655e-06, 0, 1.0000006, 0.1134963, 4.7352896, 6.5829706)
+
+[node name="Label3D2" type="Label3D" parent="." unique_id=1018077245]
+transform = Transform3D(-4.7020903, 0, 8.742278e-08, 0, 4.3337317, 0, -4.1106978e-07, 0, -1, 15.815983, 4.133421, -2.3128161)
+text = "Dont get seen by the seer
+(Nothing works btw)"
