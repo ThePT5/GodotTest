@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dr8e0x336au2u"]
+
+[ext_resource type="Script" uid="uid://d1snaxb8pexyw" path="res://trash.gd" id="1_tunu6"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e3m3f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbl11"]
+size = Vector2(35, 86)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mixpf"]
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1170681892]
+position = Vector2(34.555603, 27.397995)
+physics_material_override = SubResource("PhysicsMaterial_e3m3f")
+script = ExtResource("1_tunu6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=693008734]
+position = Vector2(-17.055603, 15.602005)
+shape = SubResource("RectangleShape2D_qbl11")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=870873923]
+position = Vector2(-17.055601, 16.102005)
+scale = Vector2(30.999996, 83)
+mesh = SubResource("BoxMesh_mixpf")

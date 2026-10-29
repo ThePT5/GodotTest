@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://3roum3ix5mcc"]
+
+[ext_resource type="Script" uid="uid://bo87syvt8wpp8" path="res://Sorter.gd" id="1_spib0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mixpf"]
+size = Vector2(282, 101)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mixpf"]
+
+[node name="Node2D" type="Node2D" unique_id=445860404]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=719100394]
+script = ExtResource("1_spib0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=750724082]
+position = Vector2(141, 50.5)
+shape = SubResource("RectangleShape2D_mixpf")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=2087312261]
+position = Vector2(141, 62.5)
+scale = Vector2(282, 95)
+mesh = SubResource("BoxMesh_mixpf")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_shape_entered" from="Area2D" to="Area2D" method="_on_body_shape_entered"]
