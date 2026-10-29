@@ -7,6 +7,11 @@
 
 [node name="Trash" parent="." unique_id=420845606 instance=ExtResource("1_3tbxw")]
 position = Vector2(528, 60)
+trashType = 1
+
+[node name="Trash" parent="Trash" unique_id=1170681892 instance=ExtResource("1_3tbxw")]
+position = Vector2(51, -2)
+trashType = 0
 
 [node name="Node2D" parent="." unique_id=445860404 instance=ExtResource("2_e3m3f")]
 position = Vector2(429, 517)
