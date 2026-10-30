@@ -7,19 +7,17 @@ size = Vector2(282, 101)
 
 [sub_resource type="BoxMesh" id="BoxMesh_mixpf"]
 
-[node name="Node2D" type="Node2D" unique_id=445860404]
-
-[node name="Area2D" type="Area2D" parent="." unique_id=719100394]
+[node name="Area2D" type="Area2D" unique_id=478962776]
 script = ExtResource("1_spib0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=750724082]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=79070017]
 position = Vector2(141, 50.5)
 shape = SubResource("RectangleShape2D_mixpf")
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=2087312261]
-position = Vector2(141, 62.5)
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="." unique_id=1392068737]
+position = Vector2(141.00002, 62.00003)
 scale = Vector2(282, 95)
 mesh = SubResource("BoxMesh_mixpf")
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_shape_entered" from="Area2D" to="Area2D" method="_on_body_shape_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
