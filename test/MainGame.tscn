@@ -16,7 +16,3 @@ trashType = 0
 [node name="Area2D" parent="." unique_id=478962776 instance=ExtResource("2_e3m3f")]
 position = Vector2(635, 537)
 trashType = 1
-
-[node name="Trash2" parent="." unique_id=1170681892 instance=ExtResource("1_3tbxw")]
-position = Vector2(435, 151)
-trashType = 0
