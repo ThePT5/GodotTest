@@ -1,13 +1,14 @@
 extends Node2D
 
 var trashList : Array
+var localPos = self.position
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	while true :
 		OS.delay_msec(1000)
 		var trash = preload("res://trash.gd")
-		var nTrash = trash.instance()
+		var nTrash = trash.new()
 		trashList.insert(-1, nTrash)
 		
 
