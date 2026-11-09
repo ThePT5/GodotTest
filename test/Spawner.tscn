@@ -2,5 +2,9 @@
 
 [ext_resource type="Script" uid="uid://dqo7i7fhkweco" path="res://spawner.gd" id="1_mimr8"]
 
-[node name="Spawner" type="Node2D" unique_id=1183790668]
+[sub_resource type="BoxMesh" id="BoxMesh_u3e73"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" unique_id=1500222833]
+scale = Vector2(173.5, 164.5)
+mesh = SubResource("BoxMesh_u3e73")
 script = ExtResource("1_mimr8")

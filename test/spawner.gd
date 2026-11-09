@@ -9,6 +9,8 @@ func _ready() -> void:
 		OS.delay_msec(1000)
 		var trash = preload("res://trash.gd")
 		var nTrash = trash.new()
+		nTrash.position = localPos
+		
 		trashList.insert(-1, nTrash)
 		
 

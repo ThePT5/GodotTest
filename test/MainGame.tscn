@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ka3tftgviqni"]
 
 [ext_resource type="PackedScene" uid="uid://3roum3ix5mcc" path="res://Sorter.tscn" id="2_e3m3f"]
+[ext_resource type="PackedScene" uid="uid://dr8e0x336au2u" path="res://Trash.tscn" id="3_ws5ob"]
 
 [node name="Node2D" type="Node2D" unique_id=1183547318]
 
@@ -11,3 +12,6 @@ trashType = 0
 [node name="Area2D" parent="." unique_id=478962776 instance=ExtResource("2_e3m3f")]
 position = Vector2(635, 537)
 trashType = 1
+
+[node name="RigidBody2D" parent="." unique_id=1170681892 instance=ExtResource("3_ws5ob")]
+position = Vector2(231, 365)
