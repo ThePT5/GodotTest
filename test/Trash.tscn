@@ -16,10 +16,13 @@ gravity_scale = 0.0
 script = ExtResource("1_tunu6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=693008734]
+modulate = Color(0.011764706, 1, 1, 1)
+self_modulate = Color(0, 1, 1, 1)
 show_behind_parent = true
 shape = SubResource("RectangleShape2D_qbl11")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=870873923]
+modulate = Color(1, 1, 1, 0.11764706)
 z_index = 1
 scale = Vector2(30.999996, 83)
 mesh = SubResource("BoxMesh_mixpf")
