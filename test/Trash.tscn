@@ -16,6 +16,7 @@ gravity_scale = 0.0
 script = ExtResource("1_tunu6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=693008734]
+show_behind_parent = true
 shape = SubResource("RectangleShape2D_qbl11")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=870873923]
