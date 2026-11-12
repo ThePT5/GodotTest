@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 	elif Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		leftMouseButtonState = true
 		selectedObject.position = self.position
-	elif Input.is_action_just_released("LEFT_MOUSE_BUTTON") and exited:
+	elif exited:
 		print("Real")
 		leftMouseButtonState = false
 		selectedObject = null
