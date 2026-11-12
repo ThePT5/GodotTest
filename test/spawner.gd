@@ -22,11 +22,7 @@ func _process(_delta: float) -> void:
 
 #func _on_timer_timeout() -> void:
 	#var nTrash = TRASH.instantiate()
-	##trashList.insert(-1, nTrash)
+	#trashList.insert(-1, nTrash)
 	#trashList.append(nTrash)
 	#add_child(nTrash)
 	#nTrash.position = localPos
-
-## function Input
-## if mouseCursor over Trash:
-	## move thing to cursor position

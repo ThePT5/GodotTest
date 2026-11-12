@@ -12,7 +12,7 @@ size = Vector2(31, 83)
 [node name="RigidBody2D" type="RigidBody2D" unique_id=1170681892]
 input_pickable = true
 physics_material_override = SubResource("PhysicsMaterial_e3m3f")
-gravity_scale = 0.0
+gravity_scale = 0.01
 script = ExtResource("1_tunu6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=693008734]
@@ -26,6 +26,3 @@ modulate = Color(1, 1, 1, 0.11764706)
 z_index = 1
 scale = Vector2(30.999996, 83)
 mesh = SubResource("BoxMesh_mixpf")
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

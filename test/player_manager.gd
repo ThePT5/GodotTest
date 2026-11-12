@@ -11,18 +11,15 @@ func _process(delta: float) -> void:
 		print
 	elif Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		leftMouseButtonState = true
-		selectedObject.position = self.position
-	elif exited:
-		print("Real")
+		selectedObject.setReleased(false)
+	elif Input.is_action_just_released("LEFT_MOUSE_BUTTON"):
 		leftMouseButtonState = false
-		selectedObject = null
+		selectedObject.setReleased(true)
 
 func _on_body_entered(body: Node2D) -> void:
-	print("Hi")
-	if leftMouseButtonState == false:
-		exited = false
-		selectedObject = body
+	selectedObject = body
 
 func _on_body_exited(body: Node2D) -> void:
-	print("Bye")
-	exited = true
+	if leftMouseButtonState == false:
+		exited = false
+		selectedObject = null
