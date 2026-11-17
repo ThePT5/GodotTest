@@ -12,7 +12,6 @@ func _ready() -> void:
 		trashType = 0
 	elif randomNumber == 2:
 		trashType = 1
-		
 func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	if released != true:
 		state.transform.origin = get_viewport().get_mouse_position()

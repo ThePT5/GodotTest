@@ -2,7 +2,7 @@ extends Node2D
 
 var trashList : Array
 var localPos = self.position
-const TRASH = preload("uid://dr8e0x336au2u")
+var TRASH = preload("res://Trash.tscn")
 
 func _on_timer_timeout() -> void:
 	var nTrash = TRASH.instantiate()
