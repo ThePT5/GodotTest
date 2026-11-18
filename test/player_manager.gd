@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 		leftMouseButtonState = false
 		selectedObject.setReleased(true)
 func _on_body_entered(body: Node2D) -> void:
-	if leftMouseButtonState == false:
+	if leftMouseButtonState == false and body is Trash:
 		selectedObject = body
 
 func _on_body_exited(body: Node2D) -> void:
