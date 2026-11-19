@@ -6,13 +6,15 @@ var start = true
 
 ## This is the class for Trash
 
-@export_enum("rec", "nonRec") var trashType
-var randomNumber = randi_range(1,2)
+var trashType = ["Rec", "Mixed", "NonRec"]
+var randomNumber = randi_range(1,3)
 func _ready() -> void:
 	if randomNumber == 1:
 		trashType = 0
 	elif randomNumber == 2:
 		trashType = 1
+	elif randomNumber == 3:
+		trashType = 2
 
 func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 	if start:
