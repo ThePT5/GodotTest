@@ -9,33 +9,30 @@
 [node name="Node2D" type="Node2D" unique_id=1183547318]
 script = ExtResource("1_8qpgq")
 
-[node name="Node2D" parent="." unique_id=445860404 instance=ExtResource("2_e3m3f")]
+[node name="Sorter1" parent="." unique_id=445860404 instance=ExtResource("2_e3m3f")]
 position = Vector2(32, 537)
 trashType = 0
 
-[node name="Area2D" parent="." unique_id=478962776 instance=ExtResource("2_e3m3f")]
+[node name="Sorter2" parent="." unique_id=478962776 instance=ExtResource("2_e3m3f")]
 position = Vector2(838, 536)
-trashType = 1
+trashType = 2
 
 [node name="MeshInstance2D" parent="." unique_id=1500222833 instance=ExtResource("3_bqqt8")]
-position = Vector2(119.99999, 116)
+position = Vector2(576.99994, -82)
+scale = Vector2(1086.75, 164.5)
 
 [node name="PlayerManager" parent="." unique_id=50518118 instance=ExtResource("4_bqqt8")]
 position = Vector2(157, 689)
 
-[node name="Area2D2" parent="." unique_id=1838434291 instance=ExtResource("2_e3m3f")]
+[node name="Sorter3" parent="." unique_id=1838434291 instance=ExtResource("2_e3m3f")]
 position = Vector2(438, 538)
+trashType = 1
 
 [node name="StaticBody2D" parent="." unique_id=151629155 instance=ExtResource("5_8qpgq")]
 position = Vector2(1137, 323)
 rotation = -3.1415925
-scale = Vector2(1, 7.782735)
+scale = Vector2(1, 7.862735)
 
 [node name="StaticBody2D2" parent="." unique_id=1267288444 instance=ExtResource("5_8qpgq")]
 position = Vector2(16, 325)
-scale = Vector2(1, 7.7440042)
-
-[node name="StaticBody2D3" parent="." unique_id=881291433 instance=ExtResource("5_8qpgq")]
-position = Vector2(576, 16)
-rotation = 1.5707968
-scale = Vector2(1, 14.147326)
+scale = Vector2(1, 7.864004)
